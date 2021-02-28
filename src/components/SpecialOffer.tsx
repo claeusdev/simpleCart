@@ -2,13 +2,13 @@ import React from "react";
 import { IPizza } from "../types/pizza";
 import withAddToCart, { AddToCartProps } from "./AddToCart";
 
-interface PizzaProps extends AddToCartProps {
+interface Props extends AddToCartProps {
   pizza: IPizza;
 }
 
-const Pizza: React.FC<PizzaProps> = ({ pizza, addToCart }) => {
+const SpecialOffer: React.FC<Props> = ({ pizza, addToCart }) => {
   return (
-    <li>
+    <>
       <h1>{pizza.name}</h1>
       <p>{pizza.description}</p>
       <p>{pizza.price}</p>
@@ -19,8 +19,7 @@ const Pizza: React.FC<PizzaProps> = ({ pizza, addToCart }) => {
       >
         Add to Cart
       </button>
-    </li>
+    </>
   );
 };
-
-export default withAddToCart(Pizza);
+export default withAddToCart(SpecialOffer);

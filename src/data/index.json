@@ -4,5 +4,18 @@
     "name": "Napoletana",
     "description": "Fresh tomatoes and mozzarella cheese",
     "price": 14.99
+  },
+  {
+    "id": 2,
+    "name": "Meat lovers",
+    "description": "Extra cheese meat flavored",
+    "price": 14.99
+  },
+  {
+    "id": 3,
+    "name": "Random Piza",
+    "description": "Extra cheese meat flavored",
+    "price": 10.0,
+    "specialOffer": true
   }
 ]
